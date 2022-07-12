@@ -1,0 +1,40 @@
+@import "vars";
+
+/* MIXINS */
+
+/* MEDIA QUERIES */
+@mixin maxXSmallScreen {
+  @media only screen and (max-width: $sm-layout) {
+    @content;
+  }
+}
+
+@mixin maxMediumScreen {
+  @media only screen and (max-width: $md-layout) {
+    @content;
+  }
+}
+
+@mixin maxLgScreen {
+  @media only screen and (max-width: $lg-layout) {
+    @content;
+  }
+}
+
+@mixin maxTabletScreen {
+  @media only screen and (max-width: $xl-layout) {
+    @content;
+  }
+}
+
+@mixin minXSmallMaxTabletScreen {
+  @media only screen and (min-width: $md-layout) and (max-width: $xl-layout) {
+    @content;
+  }
+}
+
+@mixin minXXLargeScreen {
+  @media only screen and (min-width: $xxl-layout) {
+    @content;
+  }
+}

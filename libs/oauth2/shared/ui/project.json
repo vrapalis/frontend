@@ -1,0 +1,31 @@
+{
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "library",
+  "sourceRoot": "libs/oauth2/shared/ui/src",
+  "prefix": "web",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": [
+        "coverage/libs/oauth2/shared/ui"
+      ],
+      "options": {
+        "jestConfig": "libs/oauth2/shared/ui/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/oauth2/shared/ui/src/**/*.ts",
+          "libs/oauth2/shared/ui/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": [
+    "scope:oauth2",
+    "type:ui"
+  ]
+}

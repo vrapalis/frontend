@@ -1,0 +1,6 @@
+@import "libs/websites/vrapalis/ui/src/lib/style/style";
+
+.contact-wrapper {
+  @extend %margin;
+  padding: 150px 0px 150px 0px;
+}

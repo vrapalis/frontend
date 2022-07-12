@@ -1,0 +1,5 @@
+@import "libs/websites/vrapalis/ui/src/lib/style/style";
+
+.masthead-wrapper {
+  @extend %margin;
+}

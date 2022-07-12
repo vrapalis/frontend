@@ -1,0 +1,60 @@
+@import "libs/shared/ui/src/lib/style/mixins";
+@import "libs/websites/vrapalis/ui/src/lib/style/vars";
+
+.more-wrapper {
+  overflow: hidden;
+  max-width: $max-width-content;
+  margin: auto;
+  padding-top: 20px;
+
+  article:not(:first-child) {
+    margin-top: 75px;
+  }
+
+  .more-image {
+    width: 260px;
+    height: 260px;
+    object-fit: contain;
+    position: relative;
+    top: -30px;
+  }
+
+  .more-info {
+    margin: 120px 0px 30px 0px;
+  }
+
+  @include maxLgScreen {
+
+  }
+
+  @include maxLgScreen {
+    padding: 0px 5px;
+
+    article:not(:first-child) {
+      margin-top: 50px;
+    }
+
+    .more-image {
+      width: 300px;
+      height: 300px;
+      object-fit: contain;
+    }
+
+    .more-info {
+      margin: 50px 0px 0px 0px;
+    }
+
+  }
+
+  @include maxXSmallScreen {
+    .more-image {
+      width: 280px;
+      height: 280px;
+    }
+
+    .more-info {
+      margin: 70px 0px 30px 0px;
+    }
+  }
+}
+

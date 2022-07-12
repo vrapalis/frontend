@@ -1,0 +1,120 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": [
+      "es2017",
+      "dom"
+    ],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@web/entryou-feature-client-home": [
+        "libs/entryou/feature/client/home/src/index.ts"
+      ],
+      "@web/entryou-shared-utility": [
+        "libs/entryou/shared/utility/src/index.ts"
+      ],
+      "@web/entryou/feature/client/code": [
+        "libs/entryou/feature/client/code/src/index.ts"
+      ],
+      "@web/entryou/feature/client/entries": [
+        "libs/entryou/feature/client/entries/src/index.ts"
+      ],
+      "@web/entryou/feature/client/entry": [
+        "libs/entryou/feature/client/entry/src/index.ts"
+      ],
+      "@web/entryou/feature/company": [
+        "libs/entryou/feature/company/src/index.ts"
+      ],
+      "@web/entryou/shared/model": [
+        "libs/entryou/shared/model/src/index.ts"
+      ],
+      "@web/entryou/shared/state": [
+        "libs/entryou/shared/state/src/index.ts"
+      ],
+      "@web/entryou/shared/ui": [
+        "libs/entryou/shared/ui/src/index.ts"
+      ],
+      "@web/oauth2-shared-utility": [
+        "libs/oauth2/shared/utility/src/index.ts"
+      ],
+      "@web/oauth2/feature/clients": [
+        "libs/oauth2/feature/clients/src/index.ts"
+      ],
+      "@web/oauth2/feature/profile": [
+        "libs/oauth2/feature/profile/src/index.ts"
+      ],
+      "@web/oauth2/feature/users": [
+        "libs/oauth2/feature/users/src/index.ts"
+      ],
+      "@web/oauth2/shared/model": [
+        "libs/oauth2/shared/model/src/index.ts"
+      ],
+      "@web/oauth2/shared/ui": [
+        "libs/oauth2/shared/ui/src/index.ts"
+      ],
+      "@web/shared/model": [
+        "libs/shared/model/src/index.ts"
+      ],
+      "@web/shared/ui": [
+        "libs/shared/ui/src/index.ts"
+      ],
+      "@web/shared/utility": [
+        "libs/shared/utility/src/index.ts"
+      ],
+      "@web/websites/shared/data-access": [
+        "libs/websites/shared/data-access/src/index.ts"
+      ],
+      "@web/websites/shared/model": [
+        "libs/websites/shared/model/src/index.ts"
+      ],
+      "@web/websites/shared/ui": [
+        "libs/websites/shared/ui/src/index.ts"
+      ],
+      "@web/websites/vrapalis/data-access": [
+        "libs/websites/vrapalis/data-access/src/index.ts"
+      ],
+      "@web/websites/vrapalis/feature/about": [
+        "libs/websites/vrapalis/feature/about/src/index.ts"
+      ],
+      "@web/websites/vrapalis/feature/blog": [
+        "libs/websites/vrapalis/feature/blog/src/index.ts"
+      ],
+      "@web/websites/vrapalis/feature/contact": [
+        "libs/websites/vrapalis/feature/contact/src/index.ts"
+      ],
+      "@web/websites/vrapalis/feature/home": [
+        "libs/websites/vrapalis/feature/home/src/index.ts"
+      ],
+      "@web/websites/vrapalis/feature/masthead": [
+        "libs/websites/vrapalis/feature/masthead/src/index.ts"
+      ],
+      "@web/websites/vrapalis/feature/projects": [
+        "libs/websites/vrapalis/feature/projects/src/index.ts"
+      ],
+      "@web/websites/vrapalis/model": [
+        "libs/websites/vrapalis/model/src/index.ts"
+      ],
+      "@web/websites/vrapalis/ui": [
+        "libs/websites/vrapalis/ui/src/index.ts"
+      ],
+      "@web/websites/vrapalis/utility": [
+        "libs/websites/vrapalis/utility/src/index.ts"
+      ]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "tmp"
+  ]
+}

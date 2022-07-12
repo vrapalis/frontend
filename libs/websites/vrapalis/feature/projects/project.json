@@ -1,0 +1,31 @@
+{
+  "$schema": "../../../../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "library",
+  "sourceRoot": "libs/websites/vrapalis/feature/projects/src",
+  "prefix": "web-vr",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": [
+        "coverage/libs/websites/vrapalis/feature/projects"
+      ],
+      "options": {
+        "jestConfig": "libs/websites/vrapalis/feature/projects/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/websites/vrapalis/feature/projects/src/**/*.ts",
+          "libs/websites/vrapalis/feature/projects/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": [
+    "scope:websites-vrapalis",
+    "type:feature"
+  ]
+}

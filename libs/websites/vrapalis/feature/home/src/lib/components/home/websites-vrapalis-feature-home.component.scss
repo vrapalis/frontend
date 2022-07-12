@@ -1,0 +1,241 @@
+@import "libs/shared/ui/src/lib/style/mixins";
+@import "libs/websites/vrapalis/ui/src/lib/style/vars";
+
+.home-wrapper {
+  overflow-x: hidden;
+
+  .home-start {
+
+    .home-start-wrapper {
+      max-width: $max-width-content;
+      margin: 0px auto;
+      height: 800px;
+      display: flex;
+      justify-content: center;
+
+      img {
+        object-fit: scale-down;
+        opacity: 1;
+        object-position: bottom;
+      }
+
+      section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        text-align: left;
+        position: relative;
+        top: 0px;
+        left: 0px;
+
+        strong {
+          font-weight: 900;
+          font-size: 45px;
+          color: rgba(19, 120, 155, 0.84);
+        }
+
+        h1 {
+          font-size: 45px;
+          font-weight: 900;
+          line-height: 60px;
+        }
+
+        h3 {
+          font-size: 28px;
+          font-weight: 600;
+          margin-top: 25px;
+          color: #e49b9ba1;
+        }
+
+        p {
+          margin-top: 50px;
+
+          div {
+            font-size: 20px;
+          }
+
+          strong {
+            font-size: unset;
+          }
+        }
+      }
+    }
+  }
+
+  .info {
+    max-width: $max-width-content;
+    margin-left: auto;
+    margin-right: auto;
+
+    p {
+      //width: 80%;
+      font-size: 26px;
+      margin: auto;
+      text-align: left;
+    }
+  }
+
+  .home-projects {
+    margin: 10px;
+
+    .ng-image-slider {
+      max-width: $max-width-content;
+      margin-top: 30px;
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+
+      .img-div {
+        box-shadow: none !important;
+      }
+    }
+  }
+
+  hr {
+    margin: 20px auto 0px auto;
+    max-width: $max-width-content;
+  }
+
+  .home-header-text {
+    max-width: 1500px;
+    margin: 70px auto 80px auto;
+    text-align: center;
+    width: 70%;
+  }
+
+  .home-services {
+    margin: 50px auto 0px auto;
+    padding: 70px 0px 150px 0px;
+    background: #e0dbd829;
+  }
+
+  .home-info {
+
+  }
+
+  @include maxTabletScreen {
+    .home-start {
+
+      .home-start-wrapper {
+        height: 650px;
+
+        img {
+          width: 430px;
+        }
+
+        section {
+          h1, strong {
+            font-size: 35px !important;
+          }
+        }
+      }
+    }
+
+    .home-header-text {
+      width: 95%;
+      margin: 30px auto 20px auto;
+    }
+  }
+
+  @include maxLgScreen {
+    .home-start {
+
+      .home-start-wrapper {
+        height: 500px;
+
+        img {
+          width: 350px;
+        }
+
+        section {
+          top: 0;
+
+          h1, strong {
+            font-size: 28px !important;
+            line-height: 40px;
+          }
+        }
+      }
+    }
+  }
+
+  @include maxMediumScreen {
+    .home-start {
+
+      .home-start-wrapper {
+        height: 100vh;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+
+        img {
+          order: 3;
+          width: 300px;
+        }
+
+        section {
+          width: 90%;
+          top: -20px;
+
+          h1, strong {
+            font-size: 22px !important;
+            line-height: 35px;
+          }
+
+          h3 {
+            font-size: 18px;
+            margin-top: 0;
+          }
+
+          .btn-more {
+            margin-top: 0;
+            max-width: unset;
+            padding: 5px 10px;
+            width: 60%;
+          }
+        }
+      }
+    }
+
+    .home-projects {
+      margin-top: 30px;
+
+      .ng-image-slider {
+        margin-top: 0px;
+        width: 100%;
+      }
+    }
+
+    hr {
+      width: 90%;
+      margin-top: 15px;
+    }
+
+    .home-services {
+      margin: 0px 0px 100px 0px;
+      padding: unset;
+
+      .more-wrapper {
+
+        .more-section {
+        }
+      }
+    }
+  }
+
+  @include maxLgScreen {
+    .home-header-text {
+      margin: 40px auto 50px auto;
+    }
+
+    .home-services {
+      padding: 50px 0px 100px 0px;
+      margin: 0px 0px 0px 0px;
+
+      .more-wrapper {
+
+      }
+    }
+  }
+}

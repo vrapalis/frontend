@@ -1,0 +1,24 @@
+@import "apps/websites/vrapalis/src/assets/fonts/fonts";
+
+html, body {
+  height: 100%;
+}
+
+body {
+}
+
+a {
+  text-decoration: none;
+}
+
+.active:after {
+  width: 100% !important;
+  opacity: 1 !important;
+}
+
+.str-bl {
+  color: rgba(19, 120, 155, 0.84);
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

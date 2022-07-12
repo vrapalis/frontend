@@ -1,0 +1,109 @@
+{
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/oauth2/ui/src",
+  "prefix": "web",
+  "targets": {
+    "build": {
+      "executor": "@angular-devkit/build-angular:browser",
+      "outputs": [
+        "{options.outputPath}"
+      ],
+      "options": {
+        "outputPath": "dist/apps/oauth2/ui",
+        "index": "apps/oauth2/ui/src/index.html",
+        "main": "apps/oauth2/ui/src/main.ts",
+        "polyfills": "apps/oauth2/ui/src/polyfills.ts",
+        "tsConfig": "apps/oauth2/ui/tsconfig.app.json",
+        "inlineStyleLanguage": "scss",
+        "assets": [
+          "apps/oauth2/ui/src/favicon.ico",
+          "apps/oauth2/ui/src/assets"
+        ],
+        "styles": [
+          "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
+          "./node_modules/bootstrap-icons/font/bootstrap-icons.css",
+          "./node_modules/bootstrap/dist/css/bootstrap.min.css",
+          "apps/oauth2/ui/src/styles.scss"
+        ],
+        "scripts": [
+          "./node_modules/@popperjs/core/dist/umd/popper.min.js",
+          "./node_modules/bootstrap/dist/js/bootstrap.min.js"
+        ]
+      },
+      "configurations": {
+        "production": {
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "500kb",
+              "maximumError": "1mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "2kb",
+              "maximumError": "4kb"
+            }
+          ],
+          "fileReplacements": [
+            {
+              "replace": "apps/oauth2/ui/src/environments/environment.ts",
+              "with": "apps/oauth2/ui/src/environments/environment.prod.ts"
+            }
+          ],
+          "outputHashing": "all"
+        },
+        "development": {
+          "buildOptimizer": false,
+          "optimization": false,
+          "vendorChunk": true,
+          "extractLicenses": false,
+          "sourceMap": true,
+          "namedChunks": true
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "serve": {
+      "executor": "@angular-devkit/build-angular:dev-server",
+      "configurations": {
+        "production": {
+          "browserTarget": "oauth2-ui:build:production"
+        },
+        "development": {
+          "browserTarget": "oauth2-ui:build:development"
+        }
+      },
+      "defaultConfiguration": "development"
+    },
+    "extract-i18n": {
+      "executor": "@angular-devkit/build-angular:extract-i18n",
+      "options": {
+        "browserTarget": "oauth2-ui:build"
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "apps/oauth2/ui/src/**/*.ts",
+          "apps/oauth2/ui/src/**/*.html"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": [
+        "coverage/apps/oauth2/ui"
+      ],
+      "options": {
+        "jestConfig": "apps/oauth2/ui/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": [
+    "scope:oauth2",
+    "type:app"
+  ]
+}

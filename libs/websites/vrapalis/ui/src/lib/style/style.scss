@@ -1,0 +1,74 @@
+@import "libs/shared/ui/src/lib/style/mixins";
+
+@include minXXLargeScreen {
+  // SCROLL
+  ::-webkit-scrollbar-track {
+    //-webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+    background-color: #F5F5F5;
+  }
+
+  ::-webkit-scrollbar {
+    width: 5px;
+    background-color: #F5F5F5;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #9b9796;
+    //background-image: -webkit-gradient(linear, 0 0, 0 100%,
+    //  color-stop(.5, rgba(255, 255, 255, .2)),
+    //  color-stop(.5, transparent), to(transparent));
+  }
+
+}
+
+/* BUTTONS */
+.btn-more {
+  margin-top: 30px;
+  color: white;
+  background: #000000d1;
+  padding: 10px 35px;
+  border: 1px solid white;
+  max-width: 300px;
+  font-weight: 600;
+}
+
+.btn-more:hover {
+  background: #ffd400;
+}
+
+@include maxLgScreen {
+  .btn-more {
+    padding: 10px 25px;
+    max-width: 280px;
+  }
+}
+
+%margin {
+  margin: 150px auto;
+  padding: 10px 10px;
+
+  @include maxMediumScreen {
+    margin: 80px auto;
+  }
+}
+
+%card {
+  width: 25rem;
+  margin: 20px;
+
+  img {
+    height: 200px;
+    object-fit: contain;
+    width: 100%;
+    background: #cccccc;
+  }
+
+  @include maxLgScreen {
+    width: 80%;
+    margin: 50px auto;
+  }
+
+  @include maxMediumScreen {
+    width: 95%;
+  }
+}

@@ -1,0 +1,25 @@
+@import "libs/websites/vrapalis/ui/src/lib/style/vars";
+@import "libs/shared/ui/src/lib/style/mixins";
+
+.footer-wrapper {
+  width: 100%;
+  background-color: rgb(19 120 155 / 84%);
+
+  .footer-content {
+    max-width: $max-width-content;
+    margin: auto;
+    padding: 150px 100px;
+
+    .footer-imp {
+      cursor: pointer;
+    }
+  }
+
+  @include maxMediumScreen {
+
+    .footer-content {
+      padding: 50px 5px;
+
+    }
+  }
+}

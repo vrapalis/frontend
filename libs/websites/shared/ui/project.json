@@ -1,0 +1,31 @@
+{
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "library",
+  "sourceRoot": "libs/websites/shared/ui/src",
+  "prefix": "web-sh-ui",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": [
+        "coverage/libs/websites/shared/ui"
+      ],
+      "options": {
+        "jestConfig": "libs/websites/shared/ui/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/websites/shared/ui/src/**/*.ts",
+          "libs/websites/shared/ui/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": [
+    "scope:websites-shared",
+    "type:ui"
+  ]
+}

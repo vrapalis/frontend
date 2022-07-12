@@ -1,0 +1,35 @@
+{
+  "header": "In <strong class='str-bl'>search </strong> of a senior full-stack <strong class='str-bl'>Java/JavaScript</strong> software <strong class='str-bl'>developer</strong>?<br>",
+  "subheader": "I offer the following services:<br>",
+  "text": "- <strong class='str-bl'>Backend</strong> development with <strong class='str-bl'>Java</strong> and <strong class='str-bl'>Relational Databases</strong><br> (Spring Boot Web/Data/Security, Postgres/MySQL)<br><br>- <strong class='str-bl'>Frontend</strong> development with <strong class='str-bl'>JavaScript/TypeScript</strong><br> (Angular Material/PWA/Universal, Vuejs BootstrapVue, Html5/CSS3/Bootstrap5)<br><br>- <strong class='str-bl'>DevOps</strong> (AWS EC2/RDS/VPC/S3, Kubernetes/Minikube, Docker, Jenkins)",
+  "btn-more": "More",
+  "headerText": "The modern <span class='bold'>software development</span> process is complex. One should not lose sight of the essentials. I will help you to get an overview of the different <span class='bold'>software architectures</span> and existing <span class='bold'>software solutions.</span> Because you shouldn't reinvent the wheel.",
+  "services": {
+    "header": "Do you want to <span class='bold vr-gray'>digitize</span> your <span class='bold vr-gray'>business processes</span> and adapt them to the wishes of the customer? <span class='bold vr-gray'>With</span> me you get a competent and experienced <span class='bold vr-gray'>software developer</span> on board.",
+    "subHeader": "I offer the following services:",
+    "services": [
+      {
+        "title": "Development of the backend.",
+        "subTitle": "Several years of experience in the development of <span class='bold'>enterprise backends</span> in the <span class='bold'>Java</span> environment.",
+        "text": "Creation of <span class='bold'>microservice</span> based <span class='bold'>architecture</span> based on the <span class='bold'>Spring Boot/Cloud</span> Framework. Setting up <span class='bold'>OAuth2</span> Flow in the Microservice based architecture, with the help of <span class='bold'>Spring Security/Keycloak</span>. <span class='bold'>Integration</span> and <span class='bold'>JUnit</span> testing of the created units with the help of the Spring Boot Testing Module.",
+        "imageUrl": "/assets/images/spring-icon.svg"
+      },
+      {
+        "title": "Development of the frontend.",
+        "subTitle": "Several years of experience in the development of <span class='bold'>Enterprise Fronteds</span> in the <span class='bold'>JavaScript/TypeScript</span> environment.",
+        "text": "Creation of the <span class='bold'>enterprise</span> monolith/microfrontends based <span class='bold'>frontends</span> on the basis of the <span class='bold'>Angular/Vue</span> Framework. Creation of the <span class='bold'>corporate design</span> and use of this and various libraries that speed up the development process, e.g. B. <span class='bold'>Angular Material/Bootstrap. E2E</span> or <span class='bold'>Junit Testing</span> of the interfaces created with the help of <span class='bold'>Cypress/Jest.</span>",
+        "imageUrl": "/assets/images/angular-icon.svg"
+      },
+      {
+        "title": "Development of the CI/CD Pipelines (DevOps).",
+        "subTitle": "Several years of experience in developing the <span class='bold'>CI/CD</span> pipeline using the <span class='bold'>Jenkins/Docker/Gradle/Npm/Git</span> stack.",
+        "text": "Configuration and setup of the CI/CD pipeline, for the <span class='bold'>continuous code integration</span> and <span class='bold'>deployment process</span>. Creation of the required IT infrastructure using the <span class='bold'>AWS</span> cloud service provider.",
+        "imageUrl": "/assets/images/docker-icon.svg"
+      }
+    ]
+  },
+  "info": {
+    "header": "<span class='vr-black fw-bold'>Would you like to find out more about me?</span>",
+    "btnText": "Find out here!"
+  }
+}
