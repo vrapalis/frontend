@@ -1,0 +1,18 @@
+{
+  "header": {
+    "label": "Vitali Rapalis",
+    "links": {
+      "home": "Start",
+      "about": "Über Mich",
+      "projects": "Projekte",
+      "blog": "Blog",
+      "contact": "Kontakt"
+    }
+  },
+  "footer": {
+    "title": "Interesse geweckt?",
+    "subTitle": "Vereinbaren sie ein Termin mit mir.",
+    "btnTitle": "Kontakt aufnehmen!",
+    "impressum": "Impressum - Datenschutzerklärung"
+  }
+}

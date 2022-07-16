@@ -1,0 +1,18 @@
+{
+  "header": {
+    "label": "Vitali Rapalis",
+    "links": {
+      "home": "Home",
+      "about": "About Me",
+      "projects": "Projects",
+      "blog": "Blog",
+      "contact": "Contact"
+    }
+  },
+  "footer": {
+    "title": "Interest aroused?",
+    "subTitle": "Make an appointment with me.",
+    "btnTitle": "Make contact!",
+    "impressum": "Imprint - privacy policy"
+  }
+}

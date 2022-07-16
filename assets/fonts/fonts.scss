@@ -1,0 +1,44 @@
+@import "libs/websites/vrapalis/ui/src/lib/style/vars";
+
+@import "libs/shared/ui/src/lib/style/mixins";
+
+@font-face {
+  font-family: "Sora";
+  src: url(sora/Sora-Regular.ttf);
+}
+
+html * {
+  font-family: "Sora";
+  font-size: 22px;
+  line-height: 1.8;
+}
+
+@include minXSmallMaxTabletScreen {
+  html * {
+    font-size: 24px;
+  }
+}
+
+@include maxTabletScreen {
+  html * {
+    font-size: 22px;
+  }
+}
+
+@include maxLgScreen {
+  html * {
+    font-size: 21px;
+  }
+}
+
+@include maxMediumScreen {
+  html * {
+    font-size: 20px;
+  }
+}
+
+@include maxXSmallScreen {
+  html * {
+    font-size: 18px;
+  }
+}
